@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>SSEM : 알고리즘 세금신고</title>
+
+        <link
+            rel="preload"
+            href="https://fonts.gstatic.com/s/robotoflex/v8/NaPLcZLOBv5T3oB7Cb4i0xG2bDAauRdUc7yZsWIuwtiL.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin
+        />
+
+        <meta property="fb:app_id" content="208364763040243" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="SSEM : 알고리즘 세금신고" />
+        <meta property="og:url" content="https://ssem.kr" />
+        <meta property="og:image" content="/images/og/og_v1.png" />
+        <meta property="og:image:alt" content="SSEM" />
+        <meta
+            property="og:description"
+            content="개인사업자를 위한 세금신고 어플. 완벽한 부가세 신고, 종합소득세 신고를 월 비용 없는 합리적인 가격에 만나보세요. #SSEM #쎔 #쌤"
+        />
+        <meta name="robots" content="index" />
+        <meta
+            name="keywords"
+            content="부가세신고, 부가세, 부가가치세, 종합소득세, 종소세, 부가세신고방법, 종합소득세신고방법,홈택스, 국세청, 환급, 세금혜택, 절세, 세무사, 세금신고, 세무신고, 세금신고 어플, 세무신고어플, 세금관리, 세무관리, 세금관리 프로그램,간이사업자, 개인사업자, 자영업자, 소상공인, 개인사업자 부가세신고, 개인사업자 종합소득세신고, 개인사업자 세금신고, 개인사업자 세무신고,인공지능, AI, SSEM, 쎔, 쌤, 알고리즘 세금신고"
+        />
+        <meta
+            name="description"
+            content="개인사업자를 위한 알고리즘 세금신고 SSEM. 완벽한 세금신고를 월 비용 없는 합리적인 가격에 만나보세요. #SSEM #쎔 #쌤"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+
+        <link rel="shortcut" type="image/x-ico" href="https://ssem.kr/favicon.ico" />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/ssem.beta.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/ssem.ui.css" media="screen,projection" />
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="//cdn02.ssem.kr/css/comp/mainAnimation.css"
+            media="screen,projection"
+        />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/ssemkr.icon.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/icon.css" media="screen,projection" />
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="https://ssem.kr/css/comp/checkAnimation.css"
+            media="screen,projection"
+        />
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="https://ssem.kr/css/comp/taxAnimation.css"
+            media="screen,projection"
+        />
+
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="https://ssem.kr/css/fonts/ssem/font.css"
+            media="screen,projection"
+        />
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="https://ssem.kr/css/fonts/ssem/noto.css"
+            media="screen,projection"
+        />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/ssem.newIndex.css" media="screen,projection" />
+
+        <!-- 지선 추가 css -->
+        <link type="text/css" rel="stylesheet" href="./dist/css/comm.css" media="screen,projection" />
+
+        <!-- <script src='/js/jquery-3.2.1.min.js'></script> -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- <script src='/js/svg.js'></script> -->
+        <script type="text/javascript" src="https://sve.ssem.kr/ils/js/Init.js" async></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/jnut.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/_kking_app.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/jnut.formatter.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/attr.mgr.js"></script>
+
+        <script
+            type="text/javascript"
+            src="https://sve.ssem.kr//cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.4/lottie.min.js"
+        ></script>
+
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.jns.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.jns.custom.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.jns.fns.js"></script>
+
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.ele.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.lottie.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.href.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.enter.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.check.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.modal.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.btn.fake.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.textarea.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.tab.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.list.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.alert.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.confirm.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.temsg.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.slider.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.hider.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.disabler.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.select.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.incNum.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.inf.scroll.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.radio.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.format.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/chart.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/chartjs-plugin-trendline.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/signature_pad.min.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.chart.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.data.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.header.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.scrollBody.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.scrollAnimation.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.fixed.scroll.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.data.rec.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.data.json.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.data.text.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.file.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.datePicker.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.rate.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.focus.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.painter.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.slideUp.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.inputText.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.zoomArea.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.virtual.scroll.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.vkey.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.ics.js"></script>
+
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-WR57JW5");
+        </script>
+        <!-- End Google Tag Manager -->
+
+        <!-- Facebook Pixel Code -->
+        <!-- <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1201819523540382');
+        $(function(){
+        fbq('track', 'PageView', window._qstr);
+        });
+    
+        fbq('trackCustom', 'ScrollTracking', {
+        content_title: document.title, // 페이지의 제목
+        scroll_depth: '{{Scroll Depth Threshold}}%' // 스크롤 깊이
+    });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1201819523540382&ev=PageView&noscript=1(44 B)
+    https://www.facebook.com/tr?id=1201819523540382&ev=PageView&noscript=1
+    "
+    /></noscript> -->
+        <!-- End Facebook Pixel Code -->
+    </head>
+    <body>
+        <div id="u-skip">
+            <a href="#"><span>주요메뉴 바로가기</span></a>
+            <a href="#SSEM-intro"><span>컨텐츠 바로가기</span></a>
+            <a href="#"><span>풋터 바로가기</span></a>
+        </div>
+        <!-- header -->
+        <!-- <div data-ele="/common.html$.new_header_wrap"></div> -->
+        <div class="new_header_wrap">
+            <header class="bg_white w100p new_header">
+                <!-- 고정 너비 -->
+                <div class="rel_width h100p flex flex-middle">
+                    <!-- PC 메뉴 -->
+                    <div class="pc_gnb w100p flex flex-between flex-middle h100p">
+                        <div class="flex flex-middle h100p">
+                            <div class="logo_header">
+                                <a href="index.html"
+                                    ><img
+                                        class="logo00 w100"
+                                        src="https://ssem.kr/images/ssem_logo.svg"
+                                        alt="로고이미지"
+                                /></a>
+                            </div>
+                            <ul class="flex pc_bng_menu h100p">
+                                <li class="t_18 t_bold h100p flex-box flex-middle menu-step">
+                                    <a class="menu_hover" href="step.html?type=vat">신고방법</a>
+                                    <ul class="flex-box menu-step-sub">
+                                        <li class="flex-box mr0 flex-middle flex-center">
+                                            <a
+                                                class="t_center pd20 displayblock"
+                                                href="step.html?type=vat"
+                                                data-role="tab"
+                                                data-tab="vat"
+                                                >부가세</a
+                                            >
+                                        </li>
+                                        <li class="flex-box mr0 flex-middle flex-center">
+                                            <a
+                                                class="t_center pd20 displayblock"
+                                                href="step.html?type=tit"
+                                                data-role="tab"
+                                                data-tab="tit"
+                                                >종합소득세</a
+                                            >
+                                        </li>
+                                        <li class="flex-box mr0 flex-middle flex-center">
+                                            <a
+                                                class="t_center pd20 displayblock"
+                                                href="step.html?type=slc"
+                                                data-role="tab"
+                                                data-tab="slc"
+                                                >인건비</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="t_18 t_bold h100p flex-box flex-middle">
+                                    <a class="menu_hover" href="rate.html">요금안내</a>
+                                </li>
+                                <li class="t_18 t_bold h100p flex-box flex-middle">
+                                    <a class="menu_hover" href="faq.html">자주 묻는 질문</a>
+                                </li>
+                                <li class="t_18 t_bold h100p flex-box flex-middle">
+                                    <span class="menu_hover t_black" data-jns="element://.qna-btn">문의하기</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 설치 페이지 이동 -->
+                        <div class="">
+                            <a class="t_orange t_bold fr install_pc" href="/install.html">SSEM 설치</a>
+                        </div>
+                    </div>
+                    <!-- MOBILE 메뉴 -->
+                    <div class="mobile_gnb w100p flex flex-between flex-middle">
+                        <div class="ui_btn radius15 bg_orange w150" style="box-shadow: 0px 7px 20px #e962254d">
+                            <a
+                                class="flex flex-middle flex-center t_white w100p h100p"
+                                href="/install.html"
+                                style="font-size: 20px"
+                            >
+                                SSEM 설치
+                            </a>
+                        </div>
+                        <p
+                            class="cursor mobile_menu t_black flex flex-middle"
+                            data-jns="element://.mobile_menu_modal"
+                            data-jns-next="parent/.toggle_menubar"
+                        >
+                            <img src="https://ssem.kr/images/main_home/Small_elements/MENU_btn.svg" alt="메뉴 아이콘" />
+                        </p>
+                        <p class="hide toggle_menubar" data-jns="fn://toggle/menubar"></p>
+                    </div>
+                </div>
+            </header>
+
+            <!-- mobile 메뉴 모달 -->
+            <div class="w100p h100p bg_white mobile_menu_modal modal btot hide">
+                <ul class="flex flex-middle flex-center">
+                    <li><a class="t_bold" href="step.html">신고방법</a></li>
+                    <li><a class="t_bold" href="rate.html">요금안내</a></li>
+                    <li><a class="t_bold" href="faq.html">자주 묻는 질문</a></li>
+                    <li><span class="t_bold t_black" data-jns="element://.qna-btn">문의하기</span></li>
+                    <li><a class="t_bold t_orange" href="index.html">홈으로</a></li>
+                </ul>
+            </div>
+
+            <!-- 문의하기 -->
+            <div data-ele="./comp/ics/ics_000.html$.qna-root"></div>
+        </div>
+
+        <!-- section1::메인 -->
+        <section id="SSEM-intro">
+            <!-- 고정너비 -->
+            <div class="rel_width h100p flex flex-middle">
+                <div>
+                    <h1 class="t_black">
+                        <img
+                            class="notclick"
+                            style="width: 40%"
+                            src="https://ssem.kr/images/ssem_logo.svg"
+                            alt="SSEM로고"
+                        />
+                        <br />알고리즘 세금신고
+                    </h1>
+
+                    <div class="download_btn1 ui_btn ui_btn2 bg_orange radius15">
+                        <a class="w100p h100p t_white flex flex-middle flex-center" href="/install.html"
+                            >무료로 시작하기</a
+                        >
+                    </div>
+                </div>
+                <div>
+                    <object
+                        data="https://ssem.kr/images/main_home/Main_Illustrations/illustr_1.svg"
+                        type="image/svg+xml"
+                    ></object>
+                </div>
+            </div>
+        </section>
+
+        <div class="fixed_bg"></div>
+        <!-- section2::부가세,종합소득세,인건비 신고 안내 -->
+        <section id="SSEM-singo" class="t_white">
+            <!-- 고정 너비 -->
+            <div class="rel_width t_center">
+                <div>
+                    <h3 class="t_white t_bold">부가세 종합소득세 신고</h3>
+                    <p class="rate_p">월 수수료 없이 33,000원</p>
+                    <div class="VT_singoList_wrap">
+                        <ul class="VT_singoList">
+                            <li>
+                                <p class="">세금 먼저 확인하세요.<br />무료로</p>
+                                <img
+                                    class="singo-imgs notclick"
+                                    src="https://ssem.kr/images/main_home/Screens_SVG/Screen1.svg"
+                                    alt="세금 계산 결과를 확인하는 화면"
+                                />
+                            </li>
+                            <li>
+                                <p>알고리즘이<br />작은 세금 혜택도 찾아냅니다</p>
+                                <img
+                                    class="singo-imgs notclick"
+                                    src="https://ssem.kr/images/main_home/Screens_SVG/Screen2.svg"
+                                    alt="알고리즘으로 세금 혜택까지 알려주는 화면"
+                                />
+                            </li>
+                            <li>
+                                <p>세금 확인 후,<br />터치 한 번으로 신고 완료</p>
+                                <img
+                                    class="singo-imgs notclick"
+                                    src="https://ssem.kr/images/main_home/Screens_SVG/Screen3.svg"
+                                    alt="국세청으로 세금 신고가 완료된 화면"
+                                />
+                            </li>
+                            <li class="m_vt_show">
+                                <p class="">세금 먼저 확인하세요.<br />무료로</p>
+                                <img
+                                    class="singo-imgs notclick"
+                                    src="https://ssem.kr/images/main_home/Screens_SVG/Screen1.svg"
+                                    alt="세금 계산 결과를 확인하는 화면"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="VT_arrow_list flex-box">
+                        <p class="VT_right_arr cursor">
+                            <img
+                                class="simg notclick"
+                                src="https://ssem.kr/images/main_home/Small_elements/arrow_on.svg"
+                                alt="오른쪽 화살표 아이콘"
+                            />
+                        </p>
+                        <p class="VT_right_arr2 cursor hide">
+                            <img
+                                class="simg notclick"
+                                src="https://ssem.kr/images/main_home/Small_elements/arrow_off.svg"
+                                alt="오른쪽 화살표 아이콘"
+                            />
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="t_white t_bold">인건비 신고</h3>
+                    <p class="rate_p">신고 인원 당 4,400원</p>
+                    <div class="I_singoList_wrap">
+                        <ul class="I_singoList">
+                            <li>
+                                <p>SSEM을 사용해서<br />인건비 이체만 하면,</p>
+                                <img
+                                    class="singo-imgs notclick"
+                                    src="https://ssem.kr/images/main_home/Screens_SVG/Screen4.svg"
+                                    alt="SSEM을 통해 인건비를 이체하는 화면"
+                                />
+                            </li>
+                            <li>
+                                <p>인건비 신고가<br />자동으로 완료됩니다</p>
+                                <img
+                                    class="singo-imgs notclick"
+                                    src="https://ssem.kr/images/main_home/Screens_SVG/Screen5.svg"
+                                    alt="인건비 신고가 완료된 화면"
+                                />
+                            </li>
+                            <li class="m_i_show">
+                                <p>SSEM을 사용해서<br />인건비 이체만 하면,</p>
+                                <img
+                                    class="singo-imgs notclick"
+                                    src="https://ssem.kr/images/main_home/Screens_SVG/Screen4.svg"
+                                    alt="SSEM을 통해 인건비를 이체하는 화면"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="I_arrow_list flex">
+                        <p class="I_right_arr cursor">
+                            <img
+                                class="simg notclick"
+                                src="https://ssem.kr/images/main_home/Small_elements/arrow_on.svg"
+                                alt="오른쪽 화살표 아이콘"
+                            />
+                        </p>
+                        <p class="I_right_arr2 cursor hide">
+                            <img
+                                class="simg notclick"
+                                src="https://ssem.kr/images/main_home/Small_elements/arrow_off.svg"
+                                alt="오른쪽 화살표 아이콘"
+                            />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section3::SSEM기능 -->
+        <section id="SSEM-about">
+            <!-- 고정 너비 -->
+            <div class="rel_width">
+                <h3>SSEM 하나면 세금 걱정 끝.</h3>
+                <ul>
+                    <li class="flex flex-middle">
+                        <div class="mr30 w120 about_img">
+                            <img
+                                class="w100p h100 notclick"
+                                src="https://ssem.kr/images/main_home/Icons/Icon_1.svg"
+                                alt="신고 아이콘"
+                            />
+                        </div>
+                        <div>
+                            <p>부가세, 종합소득세, 인건비 신고</p>
+                            <p>누구나 쉽게 신고할 수 있어요.</p>
+                        </div>
+                    </li>
+                    <li class="flex flex-middle">
+                        <div class="">
+                            <p>장부 관리</p>
+                            <p>사업장의 거래 정보를 수집해서 매출, 매입 장부를 자동으로 만들어줍니다.</p>
+                        </div>
+                        <div class="mr30 w120 about_img">
+                            <img
+                                class="w100p h100 notclick"
+                                src="https://ssem.kr/images/main_home/Icons/Icon_2.svg"
+                                alt="장부 관리 아이콘"
+                            />
+                        </div>
+                    </li>
+                    <li class="flex flex-middle">
+                        <div class="mr30 w120 about_img">
+                            <img
+                                class="w100p h100 notclick"
+                                src="https://ssem.kr/images/main_home/Icons/Icon_3.svg"
+                                alt="문의하기 아이콘"
+                            />
+                        </div>
+                        <div class="">
+                            <p>문의하기</p>
+                            <p>궁금한 점이 있다면 언제든지 물어보세요. 최선을 다해 도와드리겠습니다.</p>
+                        </div>
+                    </li>
+                    <li class="flex flex-middle">
+                        <div class="">
+                            <p>일정 알림</p>
+                            <p>SSEM을 설치하면 사장님의 세금 관련 일정을 놓치지 않도록 알려드려요</p>
+                        </div>
+                        <div class="mr30 w120 about_img">
+                            <img
+                                class="w100p h100 notclick"
+                                src="https://ssem.kr/images/main_home/Icons/Icon_4.svg"
+                                alt="일정 알림 아이콘"
+                            />
+                        </div>
+                    </li>
+                    <li class="flex flex-middle">
+                        <div class="mr30 w120 about_img">
+                            <img
+                                class="w100p h100 notclick"
+                                src="https://ssem.kr/images/main_home/Icons/Icon_5.svg"
+                                alt="그래프 아이콘"
+                            />
+                        </div>
+                        <div class="">
+                            <p>월간 리포트</p>
+                            <p>매월 사업장의 매출과 세금을 분석해서 보고서를 보내드려요.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- section4::누가 사용할 수 있나요? -->
+        <section id="SSEM-who">
+            <!-- 고정 너비 -->
+            <div class="rel_width">
+                <h3 class="t_center">나도 사용할 수 있을까?</h3>
+                <div class="canuse_list_wrap">
+                    <ul class="canuse_list flex flex-wrap flex-between">
+                        <li class="canuse_li flex-center flex flex-column flex-middle">
+                            <div class="canuse_cate">
+                                <p class="canuse_name">음식점, 카페</p>
+                                <p class="canuse_exp">배달앱 매출이 있어도 OK</p>
+                            </div>
+                            <div class="canuse_img flex flex-center flex-middle">
+                                <img
+                                    class="notclick"
+                                    src="https://ssem.kr/images/main_home/Main_Illustrations/boss_worker1.svg"
+                                    alt="음식점,카페 일을 하고있는 사람 그림"
+                                    style="width: 74% !important"
+                                />
+                            </div>
+                        </li>
+                        <li class="canuse_li flex-center flex flex-column flex-middle">
+                            <div class="canuse_cate">
+                                <p class="canuse_name">화물 운수업</p>
+                                <p class="canuse_exp"></p>
+                            </div>
+                            <div class="canuse_img flex flex-center flex-middle">
+                                <img
+                                    class="notclick"
+                                    src="https://ssem.kr/images/main_home/Main_Illustrations/boss_worker2.svg"
+                                    alt="화물 운수업을 하는 사람 그림"
+                                    style="width: 66% !important"
+                                />
+                            </div>
+                        </li>
+                        <li class="canuse_li flex-center flex flex-column flex-middle">
+                            <div class="canuse_cate">
+                                <p class="canuse_name">온라인 쇼핑몰</p>
+                                <p class="canuse_exp"></p>
+                            </div>
+                            <div class="canuse_img flex flex-center flex-middle">
+                                <img
+                                    class="w80p notclick"
+                                    src="https://ssem.kr/images/main_home/Main_Illustrations/boss_worker3.svg"
+                                    alt="제품이 쌓인 곳에서 전화를 받으며 타블렛을 확인하는 사람 그림."
+                                    style="width: 77% !important"
+                                />
+                            </div>
+                        </li>
+                        <li class="canuse_li flex-center flex flex-column flex-middle">
+                            <div class="canuse_cate">
+                                <p class="canuse_name">서비스업</p>
+                                <p class="canuse_exp"></p>
+                            </div>
+                            <div class="canuse_img flex flex-center flex-middle">
+                                <img
+                                    class="w85p notclick"
+                                    src="https://ssem.kr/images/main_home/Main_Illustrations/boss_worker4.svg"
+                                    alt="손님의 머리를 정돈하는 미용사 그림"
+                                />
+                            </div>
+                        </li>
+                        <li class="canuse_li flex-center flex flex-column flex-middle">
+                            <div class="canuse_cate">
+                                <p class="canuse_name">임대 사업자</p>
+                                <p class="canuse_exp"></p>
+                            </div>
+                            <div class="canuse_img flex flex-center flex-middle">
+                                <img
+                                    class="w95p notclick"
+                                    src="https://ssem.kr/images/main_home/Main_Illustrations/boss_worker5.svg"
+                                    alt="자신의 서류를 확인하고 있는 임대 사업자 그림"
+                                />
+                            </div>
+                        </li>
+                        <li class="canuse_li flex-center flex flex-column flex-middle">
+                            <div class="canuse_cate">
+                                <p class="canuse_name">단기 근로자</p>
+                                <p class="canuse_exp">알바, 배달 등 단기 수입이 있는 분</p>
+                            </div>
+                            <div class="canuse_img flex flex-center flex-middle">
+                                <img
+                                    class="w80p notclick"
+                                    src="https://ssem.kr/images/main_home/Main_Illustrations/boss_worker6.svg"
+                                    alt="배달을 하고있는 배달원의 그림"
+                                />
+                            </div>
+                        </li>
+                        <li class="canuse_li flex-center flex flex-column flex-middle">
+                            <div class="canuse_cate">
+                                <p class="canuse_name">프리랜서, 계약직</p>
+                                <p class="canuse_exp">3.3% 고용 계약을 맺은 분</p>
+                            </div>
+                            <div class="canuse_img flex flex-center flex-middle">
+                                <img
+                                    class="w95p notclick"
+                                    src="https://ssem.kr/images/main_home/Main_Illustrations/boss_worker7.svg"
+                                    alt="바닷가에서 노트북으로 일하는 프리랜서 그림"
+                                />
+                            </div>
+                        </li>
+                        <li class="canuse_li flex-center flex flex-column flex-middle">
+                            <div class="canuse_cate">
+                                <p class="canuse_name">추가 수입이 있는 직장인</p>
+                                <p class="canuse_exp">급여 외에 추가로 수입이 있는 분</p>
+                            </div>
+                            <div class="canuse_img flex flex-center flex-middle">
+                                <img
+                                    class="w95p notclick"
+                                    src="https://ssem.kr/images/main_home/Main_Illustrations/boss_worker8.svg"
+                                    alt="자신의 노트북으로 일을 하고 있는 사람 그림"
+                                />
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="canuse_etc_p t_center">
+                        <span class="t_bold">이 외에도 부가세, 종합소득세 신고가 필요한 모든 개인사업자</span
+                        ><br />(법인은 사용할 수 없어요.)
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- section5::스토어평점 -->
+        <section id="SSEM-store">
+            <!-- 고정 너비 -->
+            <div class="rel_width">
+                <h3 class="flex flex-col flex-center flex-middle">
+                    <span class="t_orange star pr0 pb5">★★★★★</span>
+                    <span class="store_title">사장님 실제 리뷰</span>
+                </h3>
+                <div class="flex flex-col flex-middle suggest_wrap">
+                    <div class="flex flex-middle">
+                        <img
+                            class="suggest_chef_img w100p notclick"
+                            src="https://ssem.kr/images/main_home/boss_suggest.svg"
+                            alt="팔짱을 낀 주방장이 앞을 보고있는 모습"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="store_slide_wrap">
+                <ul class="comments_ul list" data-jno="REVIEW">
+                    <li class="comments hide">
+                        <div>
+                            <div class="flex flex-middle pb10 w100p">
+                                <div class="radius50 w35 h35 overh">
+                                    <img
+                                        class="thumbnail w100p notclick"
+                                        src=""
+                                        data-row="THUMB"
+                                        data-jnf="IMG_SRC"
+                                        alt="리뷰 사용자 프로필 이미지"
+                                    />
+                                </div>
+                                <p class="review_name t_bold ml10" data-row="NM">김널리00</p>
+                            </div>
+                            <div class="t_orange stars pb10 t_normal">★★★★★</div>
+                            <p class="review_ex" data-row="TXT">정말 사용하기 좋아요. 편리합니다</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- svc -->
+            <div class="hide">
+                <p class="review_ld" data-jns="fn://review/load" data-jns-onload></p>
+                <p class="review_rt" data-jns="fn://review/rt"></p>
+            </div>
+        </section>
+        <!-- section6::SSEM안전 -->
+        <section id="SSEM-safe">
+            <!-- 고정 너비 -->
+            <div class="rel_width h100p rest-wrap">
+                <div class="">
+                    <img
+                        class="rest_img simg notclick"
+                        src="https://ssem.kr/images/main_home/rest_girl.svg"
+                        alt="빈백에 편안하게 누워있는 사람"
+                    />
+                </div>
+                <div>
+                    <h3>안심하고 사용하세요.<br />10억 책임보험 가입.</h3>
+                    <p>
+                        SSEM의 문제로 가산세 등 금전적인 손해가 생긴다면, 전액 보상합니다.<br />SSEM은 만일의 사태에
+                        대비하여 삼성화재해상보험에 최대 10억원까지 보상해주는 책임보험을 가입하였습니다. 안심하고
+                        신고하세요!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- section7::문의하기 -->
+        <section id="SSEM-chat">
+            <!-- 고정 너비 -->
+            <div class="rel_width h100p">
+                <h3>궁금한 점이 있다면</h3>
+                <div class="flex-box flex-center flex-middle gap10 w100p flex-wrap">
+                    <div
+                        class="pd15 radius15 border01 w150 flex-box flex-col flex-middle"
+                        style="align-self: stretch; justify-content: flex-start"
+                        data-jns="element://.qna-btn"
+                    >
+                        <div class="flex-box flex-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                                <path
+                                    d="M240 657h313v-60H240v60Zm0-130h480v-60H240v60Zm0-130h480v-60H240v60ZM80 976V236q0-23 18-41.5t42-18.5h680q23 0 41.5 18.5T880 236v520q0 23-18.5 41.5T820 816H240L80 976Zm60-145 75-75h605V236H140v595Zm0-595v595-595Z"
+                                />
+                            </svg>
+                        </div>
+                        <span>채팅상담</span>
+                    </div>
+                    <a
+                        class="pd15 radius15 border01 w150 flex-box flex-col flex-middle flex-center"
+                        href="tel:15885368"
+                    >
+                        <div class="flex-box flex-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                                <path
+                                    d="M795 936q-122 0-242.5-60T336 720q-96-96-156-216.5T120 261q0-19.286 12.857-32.143T165 216h140q13.611 0 24.306 9.5Q340 235 343 251l27 126q2 14-.5 25.5T359 422L259 523q56 93 125.5 162T542 802l95-98q10-11 23-15.5t26-1.5l119 26q15.312 3.375 25.156 15.188Q840 740 840 756v135q0 19.286-12.857 32.143T795 936ZM229 468l81-82-23-110H180q0 39 12 85.5T229 468Zm369 363q41 19 89 31t93 14V769l-103-21-79 83ZM229 468Zm369 363Z"
+                                />
+                            </svg>
+                        </div>
+                        <div>전화상담</div>
+                        <div class="t_small t_gray">1588-5368</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <!-- <div data-ele="https://ssem.kr/common.html$.new_footer"></div> -->
+        <footer class="new_footer">
+            <!-- 고정 너비 -->
+            <div class="rel_width">
+                <!-- pc footer -->
+                <div class="pc_footer">
+                    <div>
+                        <div>
+                            <a href="index.html"
+                                ><img
+                                    class="logo00 pc_footer_logo"
+                                    src="https://ssem.kr/images/ssem_logo_white2.svg"
+                                    alt="로고이미지"
+                            /></a>
+                        </div>
+                        <div>
+                            <ul class="flex pc_footer_linkList">
+                                <li class="mr30"><a class="t_white t_bold" href="/term_03.html">공지사항</a></li>
+                                <li class="mr30"><a class="t_white t_bold" href="/term_02.html">이용약관</a></li>
+                                <li class="mr30">
+                                    <a class="t_white t_bold" href="/term_01.html">개인정보 취급방침</a>
+                                </li>
+                                <li><a class="t_white t_bold" href="/company.html">회사소개</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pc_RightSNS_wrap">
+                        <p class="t_white t_18">© 2022 nullee Inc.</p>
+                        <ul class="flex flex-middle">
+                            <li class="w20 mr20">
+                                <a href="https://www.instagram.com/ssem_official/" target="_blank"
+                                    ><img
+                                        src="https://ssem.kr/images/main_home/SNS/insta.svg"
+                                        alt="SSEM인스타그램으로 연결되는 아이콘"
+                                /></a>
+                            </li>
+                            <li class="mr20">
+                                <a href="https://www.facebook.com/ssem.kr/" target="_blank"
+                                    ><img
+                                        src="https://ssem.kr/images/main_home/SNS/Facebook.svg"
+                                        alt="SSEM페이스북으로 연결되는 아이콘"
+                                /></a>
+                            </li>
+                            <li class="mr20">
+                                <a
+                                    href="https://www.youtube.com/channel/UCYm4sGPN2_1NoGtkt0VRwCw/featured"
+                                    target="_blank"
+                                    ><img
+                                        src="https://ssem.kr/images/main_home/SNS/Youtube.svg"
+                                        alt="SSEM유튜브로 연결되는 아이콘"
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="http://blog.ssem.kr/" target="_blank"
+                                    ><img
+                                        src="https://ssem.kr/images/main_home/SNS/Blog.svg"
+                                        alt="SSEM블로그로 연결되는 아이콘"
+                                /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- mobile footer -->
+                <div class="mobile_footer flex-between">
+                    <div class="mobile_logo_SNS_wrap flex flex-between">
+                        <div>
+                            <a href="/index.html"
+                                ><img
+                                    class="logo00 mobile_footer_logo"
+                                    src="https://ssem.kr/images/ssem_logo_white2.svg"
+                                    alt="로고이미지"
+                            /></a>
+                        </div>
+                        <ul class="flex flex-middle mobile_SNS_wrap">
+                            <li class="w20 mr20 ml20">
+                                <a href="https://www.instagram.com/ssem_official/" target="_blank"
+                                    ><img
+                                        src="https://ssem.kr/images/main_home/SNS/insta.svg"
+                                        alt="SSEM인스타그램으로 연결되는 아이콘"
+                                /></a>
+                            </li>
+                            <li class="mr20">
+                                <a href="https://www.facebook.com/ssem.kr/" target="_blank"
+                                    ><img
+                                        src="https://ssem.kr/images/main_home/SNS/Facebook.svg"
+                                        alt="SSEM페이스북으로 연결되는 아이콘"
+                                /></a>
+                            </li>
+                            <li class="mr20">
+                                <a
+                                    href="https://www.youtube.com/channel/UCYm4sGPN2_1NoGtkt0VRwCw/featured"
+                                    target="_blank"
+                                    ><img
+                                        src="https://ssem.kr/images/main_home/SNS/Youtube.svg"
+                                        alt="SSEM유튜브로 연결되는 아이콘"
+                                /></a>
+                            </li>
+                            <li class="">
+                                <a href="http://blog.ssem.kr/" target="_blank"
+                                    ><img
+                                        src="https://ssem.kr/images/main_home/SNS/Blog.svg"
+                                        alt="SSEM블로그로 연결되는 아이콘"
+                                /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="mobile_footer_linkList flex flex-around t_center">
+                        <li><a class="t_white t_bold" href="/term_03.html">공지사항</a></li>
+                        <li><a class="t_white t_bold" href="/term_02.html">이용약관</a></li>
+                        <li><a class="t_white t_bold" href="/term_01.html">개인정보 취급방침</a></li>
+                        <li><a class="t_white t_bold" href="/company.html">회사소개</a></li>
+                    </ul>
+                    <p class="t_18 t_center mobile_Right">© 2022 nullee Inc.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            $(document).ready(function () {
+                // fade out
+                $(window).on("scroll", function () {
+                    if ($(window).outerWidth() < 425) {
+                        let hei = parseInt((parseInt($(window).scrollTop()) / $("#SSEM-intro").height()) * 100);
+                        $("#SSEM-intro").css({
+                            opacity: `${(100 - hei) / 100}`,
+                            "-moz-opacity": `${(100 - hei) / 100}`,
+                            "-khtml-opacity": `${(100 - hei) / 100}`,
+                            visibility: "visible",
+                        });
+                    } else {
+                        $("#SSEM-intro").css("opacity", 1);
+                    }
+                });
+
+                // singo slide
+                let VT_wid;
+                let VT_ul = $(".VT_singoList");
+                let VT_right = $(".VT_right_arr");
+                let VT_right2 = $(".VT_right_arr2");
+                let VT_num = 1;
+
+                let I_wid;
+                let I_ul = $(".I_singoList");
+                let I_right = $(".I_right_arr");
+                let I_right2 = $(".I_right_arr2");
+                let I_num = 1;
+
+                VT_ul.css({ left: `${-VT_wid}px` });
+                I_ul.css({ left: `${-I_wid}px` });
+
+                VT_right.on("click", function () {
+                    VT_wid = $(".VT_singoList_wrap").width();
+                    VT_right2.removeClass("hide");
+                    VT_right.addClass("hide");
+                    if (VT_num != 3) {
+                        VT_ul.stop().animate({ left: `${-VT_wid * VT_num}px` }, 400, function () {
+                            VT_right2.addClass("hide");
+                            VT_right.removeClass("hide");
+                        });
+                        VT_num++;
+                    } else {
+                        VT_ul.stop().animate({ left: `${-VT_wid * VT_num}px` }, 400, function () {
+                            VT_ul.css("left", 0);
+                            VT_right2.addClass("hide");
+                            VT_right.removeClass("hide");
+                        });
+                        VT_num = 1;
+                    }
+                });
+                I_right.on("click", function () {
+                    I_wid = $(".I_singoList_wrap").width();
+                    I_right2.removeClass("hide");
+                    I_right.addClass("hide");
+                    if (I_num != 2) {
+                        I_ul.stop().animate({ left: `${-I_wid * I_num}px` }, 400, function () {
+                            I_right2.addClass("hide");
+                            I_right.removeClass("hide");
+                        });
+                        I_num++;
+                    } else {
+                        I_ul.stop().animate({ left: `${-I_wid * I_num}px` }, 400, function () {
+                            I_ul.css("left", 0);
+                            I_right2.addClass("hide");
+                            I_right.removeClass("hide");
+                        });
+                        I_num = 1;
+                    }
+                });
+
+                // review slide  ================================================================================================
+                const review_wrap = $("#SSEM-store .store_slide_wrap");
+                const review_ul = $("#SSEM-store .comments_ul");
+                let stopStoreScrolling = false;
+                let storeWrapCurXPos = 0;
+                let review_mouse_state = null;
+                let review_touch_state = null;
+                const REVIEW_INV_TIME = 15;
+                let reviewRollingInv;
+                const restartReviewRolling = () => {
+                    reviewRollingInv = setInterval(reviewAutoSlide, REVIEW_INV_TIME);
+                };
+
+                const checkReviewSetInv = setInterval(() => {
+                    if (1 < review_ul.children("li").length) {
+                        clearInterval(checkReviewSetInv);
+                        restartReviewRolling();
+                    }
+                }, 1000);
+                function reviewAutoSlide() {
+                    const isLastPage = checkLastReviewPage();
+                    if (isLastPage) {
+                        setTimeout(() => {
+                            if (!stopStoreScrolling && checkLastReviewPage()) {
+                                clearInterval(reviewRollingInv);
+                                review_ul.css({ left: 0 });
+                                restartReviewRolling();
+                            }
+                        }, 3000);
+                    } else review_ul.css({ left: review_ul.position().left - 1 });
+                }
+                function reviewSlide(distance) {
+                    const isLastPage = checkLastReviewPage();
+                    const review_wid = $("#SSEM-store .comments_ul li:last-child").outerWidth(true);
+                    const wrap_left = -1 * review_ul.position().left;
+                    if (0 < distance && !isLastPage) {
+                        review_ul.stop();
+                        const to_left = review_wid * Math.round(wrap_left / review_wid) + review_wid;
+                        review_ul.animate(
+                            {
+                                left: -1 * to_left + "px",
+                            },
+                            500,
+                            function () {
+                                stopStoreScrolling = false;
+                            }
+                        );
+                    } else if (0 > distance && 0 < wrap_left) {
+                        review_ul.stop();
+                        let to_left = review_wid * (wrap_left / review_wid) - review_wid;
+                        to_left = 0 > to_left ? 0 : to_left;
+                        review_ul.animate(
+                            {
+                                left: -1 * to_left + "px",
+                            },
+                            500,
+                            function () {
+                                stopStoreScrolling = false;
+                            }
+                        );
+                    }
+                }
+                function checkLastReviewPage() {
+                    const review_length = review_ul.children("li").length - 1;
+                    const wrap_wid = review_ul.outerWidth(true);
+                    const review_wid = $("#SSEM-store .comments_ul li:last-child").outerWidth(true);
+                    const wrap_left = review_ul.position().left;
+                    const review_tot_wid = review_wid * review_length;
+                    // li들의 총 width값 - 현재 wrap의 left 위치 값 - wrap width값(화면 vw)에
+                    // li 하나의 width값을 빼었을 때 1 보다 작게 남았다면 마지막 슬라이드
+                    return review_tot_wid + wrap_left - wrap_wid < 1;
+                }
+                review_wrap.on("touchmove", function (e) {
+                    const pageX = e.targetTouches[0].pageX;
+                    review_touch_state = "touchmove";
+                    if (20 < Math.abs(storeWrapCurXPos - pageX) && stopStoreScrolling) {
+                        stopStoreScrolling = false;
+                        const review_wid = $("#SSEM-store .comments_ul li:last-child").outerWidth(true);
+                        const distance = storeWrapCurXPos - pageX;
+                        reviewSlide(distance);
+                    }
+                });
+                review_wrap.on("mousemove", function (e) {
+                    const userAgent = navigator.userAgent.toLowerCase();
+                    if (userAgent.indexOf("iphone") > -1 || userAgent.indexOf("android") > -1) return;
+                    if (stopStoreScrolling) {
+                        const review_wid = $("#SSEM-store .comments_ul li:last-child").outerWidth(true);
+                        const distance = storeWrapCurXPos - e.pageX;
+                        reviewSlide(distance);
+                    }
+                });
+                review_wrap.on("touchstart", function (e) {
+                    review_ul.stop();
+                    clearInterval(reviewRollingInv);
+                    const pageX = e.targetTouches[0].pageX;
+                    storeWrapCurXPos = pageX;
+                    stopStoreScrolling = true;
+                    review_touch_state = "touchstart";
+                });
+                review_ul.on("mouseover", function (e) {
+                    clearInterval(reviewRollingInv);
+                    review_mouse_state = "mouseover";
+                    const reRolling = () => {
+                        if (review_mouse_state === "mouseleave") {
+                            clearInterval(reviewRollingInv);
+                            restartReviewRolling();
+                            clearInterval(checkReRolling);
+                        }
+                    };
+                    let checkReRolling = setInterval(reRolling, 1000);
+                });
+                review_wrap.on("mousedown", function (e) {
+                    stopStoreScrolling = true;
+                    storeWrapCurXPos = e.pageX;
+                });
+                review_wrap.on("mouseup", function (e) {
+                    stopStoreScrolling = false;
+                });
+                review_wrap.on("touchend", function (e) {
+                    setTimeout(() => {
+                        clearInterval(reviewRollingInv);
+                        restartReviewRolling();
+                        stopStoreScrolling = false;
+                        review_touch_state = "";
+                    }, 1000);
+                    stopStoreScrolling = false;
+                });
+                review_wrap.on("mouseleave", function (e) {
+                    stopStoreScrolling = false;
+                    review_mouse_state = "mouseleave";
+                });
+                // review slide  ================================================================================================
+
+                // 슬라이드 영역 초기화
+                $(window).on("resize", function () {
+                    VT_wid = $(".VT_singoList_wrap").width();
+                    I_wid = $(".I_singoList_wrap").width();
+                    review_wid = $(".store_slide_wrap").width();
+                    VT_ul.css({ left: `${-VT_wid * (VT_num - 1)}px` });
+                    I_ul.css({ left: `${-I_wid * (I_num - 1)}px` });
+                });
+            });
+        </script>
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-WR57JW5"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+                title="Google"
+            ></iframe
+        ></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    </body>
+</html>
