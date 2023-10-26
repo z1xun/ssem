@@ -16,7 +16,7 @@
         <meta property="og:type" content="website" />
         <meta property="og:title" content="SSEM : 알고리즘 세금신고" />
         <meta property="og:url" content="https://ssem.kr" />
-        <meta property="og:image" content="/images/og/og_v1.png" />
+        <meta property="og:image" content="https://ssem.kr/images/og/og_v1.png" />
         <meta property="og:image:alt" content="SSEM" />
         <meta
             property="og:description"
@@ -34,46 +34,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
         <meta name="format-detection" content="telephone=no" />
 
-        <link rel="shortcut" type="image/x-ico" href="https://ssem.kr/favicon.ico" />
-        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/ssem.beta.css" media="screen,projection" />
-        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/ssem.ui.css" media="screen,projection" />
-        <link
-            type="text/css"
-            rel="stylesheet"
-            href="//cdn02.ssem.kr/css/comp/mainAnimation.css"
-            media="screen,projection"
-        />
-        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/ssemkr.icon.css" media="screen,projection" />
-        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/icon.css" media="screen,projection" />
-        <link
-            type="text/css"
-            rel="stylesheet"
-            href="https://ssem.kr/css/comp/checkAnimation.css"
-            media="screen,projection"
-        />
-        <link
-            type="text/css"
-            rel="stylesheet"
-            href="https://ssem.kr/css/comp/taxAnimation.css"
-            media="screen,projection"
-        />
+        <link rel="icon" type="image/x-icon" href="https://ssem.kr/favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="https://ssem.kr/favicon.ico" />
 
-        <link
-            type="text/css"
-            rel="stylesheet"
-            href="https://ssem.kr/css/fonts/ssem/font.css"
-            media="screen,projection"
-        />
-        <link
-            type="text/css"
-            rel="stylesheet"
-            href="https://ssem.kr/css/fonts/ssem/noto.css"
-            media="screen,projection"
-        />
-        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/ssem.newIndex.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/ssem.beta.css" />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/ssem.ui.css" />
+        <link type="text/css" rel="stylesheet" href="//cdn02.ssem.kr/css/comp/mainAnimation.css" />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/ssemkr.icon.css" />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/icon.css" />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/comp/checkAnimation.css" />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/comp/taxAnimation.css" />
+
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/fonts/ssem/font.css" />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/fonts/ssem/noto.css" />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/ssem.newIndex.css" />
 
         <!-- 지선 추가 css -->
-        <link type="text/css" rel="stylesheet" href="./dist/css/comm.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="./dist/css/comm.css" />
 
         <!-- <script src='/js/jquery-3.2.1.min.js'></script> -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -85,10 +62,10 @@
         <script type="text/javascript" src="https://sve.ssem.kr/js/jnut.formatter.js"></script>
         <script type="text/javascript" src="https://sve.ssem.kr/js/attr.mgr.js"></script>
 
-        <script
+        <!-- <script
             type="text/javascript"
             src="https://sve.ssem.kr//cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.4/lottie.min.js"
-        ></script>
+        ></script> -->
 
         <script type="text/javascript" src="https://sve.ssem.kr/js/data.jns.js"></script>
         <script type="text/javascript" src="https://sve.ssem.kr/js/data.jns.custom.js"></script>
@@ -139,6 +116,9 @@
         <script type="text/javascript" src="https://sve.ssem.kr/js/data.vkey.js"></script>
         <script type="text/javascript" src="https://sve.ssem.kr/js/data.ics.js"></script>
 
+        <!-- 지선추가 script -->
+        <script type="text/javascript" src="/dist/js/comm.js"></script>
+
         <!-- Google Tag Manager -->
         <script>
             (function (w, d, s, l, i) {
@@ -182,10 +162,11 @@
         <!-- End Facebook Pixel Code -->
     </head>
     <body>
+        <!-- u-skip 추가 -->
         <div id="u-skip">
-            <a href="#"><span>주요메뉴 바로가기</span></a>
+            <a href="#menu"><span>주요메뉴 바로가기</span></a>
             <a href="#SSEM-intro"><span>컨텐츠 바로가기</span></a>
-            <a href="#"><span>풋터 바로가기</span></a>
+            <a href="#new__footer"><span>풋터 바로가기</span></a>
         </div>
         <!-- header -->
         <!-- <div data-ele="/common.html$.new_header_wrap"></div> -->
@@ -204,7 +185,7 @@
                                         alt="로고이미지"
                                 /></a>
                             </div>
-                            <ul class="flex pc_bng_menu h100p">
+                            <ul id="menu" class="flex pc_bng_menu h100p">
                                 <li class="t_18 t_bold h100p flex-box flex-middle menu-step">
                                     <a class="menu_hover" href="step.html?type=vat">신고방법</a>
                                     <ul class="flex-box menu-step-sub">
@@ -256,7 +237,10 @@
                     </div>
                     <!-- MOBILE 메뉴 -->
                     <div class="mobile_gnb w100p flex flex-between flex-middle">
-                        <div class="ui_btn radius15 bg_orange w150" style="box-shadow: 0px 7px 20px #e962254d">
+                        <div
+                            class="ui_btn radius15 bg_orange w150"
+                            style="box-shadow: 0px 7px 20px rgba(233, 98, 37, 0.302)"
+                        >
                             <a
                                 class="flex flex-middle flex-center t_white w100p h100p"
                                 href="/install.html"
@@ -289,7 +273,7 @@
             </div>
 
             <!-- 문의하기 -->
-            <div data-ele="./comp/ics/ics_000.html$.qna-root"></div>
+            <!-- <div data-ele="./comp/ics/ics_000.html$.qna-root"></div> -->
         </div>
 
         <!-- section1::메인 -->
@@ -651,13 +635,121 @@
             </div>
             <div class="store_slide_wrap">
                 <ul class="comments_ul list" data-jno="REVIEW">
-                    <li class="comments hide">
+                    <li class="comments">
                         <div>
                             <div class="flex flex-middle pb10 w100p">
                                 <div class="radius50 w35 h35 overh">
                                     <img
                                         class="thumbnail w100p notclick"
-                                        src=""
+                                        src="https://images.unsplash.com/photo-1561948955-570b270e7c36?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhdHxlbnwwfHwwfHx8MA%3D%3D"
+                                        data-row="THUMB"
+                                        data-jnf="IMG_SRC"
+                                        alt="리뷰 사용자 프로필 이미지"
+                                    />
+                                </div>
+                                <p class="review_name t_bold ml10" data-row="NM">김널리00</p>
+                            </div>
+                            <div class="t_orange stars pb10 t_normal">★★★★★</div>
+                            <p class="review_ex" data-row="TXT">정말 사용하기 좋아요. 편리합니다</p>
+                        </div>
+                    </li>
+                    <li class="comments">
+                        <div>
+                            <div class="flex flex-middle pb10 w100p">
+                                <div class="radius50 w35 h35 overh">
+                                    <img
+                                        class="thumbnail w100p notclick"
+                                        src="https://images.unsplash.com/photo-1561948955-570b270e7c36?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhdHxlbnwwfHwwfHx8MA%3D%3D"
+                                        data-row="THUMB"
+                                        data-jnf="IMG_SRC"
+                                        alt="리뷰 사용자 프로필 이미지"
+                                    />
+                                </div>
+                                <p class="review_name t_bold ml10" data-row="NM">김널리00</p>
+                            </div>
+                            <div class="t_orange stars pb10 t_normal">★★★★★</div>
+                            <p class="review_ex" data-row="TXT">정말 사용하기 좋아요. 편리합니다</p>
+                        </div>
+                    </li>
+                    <li class="comments">
+                        <div>
+                            <div class="flex flex-middle pb10 w100p">
+                                <div class="radius50 w35 h35 overh">
+                                    <img
+                                        class="thumbnail w100p notclick"
+                                        src="https://images.unsplash.com/photo-1561948955-570b270e7c36?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhdHxlbnwwfHwwfHx8MA%3D%3D"
+                                        data-row="THUMB"
+                                        data-jnf="IMG_SRC"
+                                        alt="리뷰 사용자 프로필 이미지"
+                                    />
+                                </div>
+                                <p class="review_name t_bold ml10" data-row="NM">김널리00</p>
+                            </div>
+                            <div class="t_orange stars pb10 t_normal">★★★★★</div>
+                            <p class="review_ex" data-row="TXT">정말 사용하기 좋아요. 편리합니다</p>
+                        </div>
+                    </li>
+                    <li class="comments">
+                        <div>
+                            <div class="flex flex-middle pb10 w100p">
+                                <div class="radius50 w35 h35 overh">
+                                    <img
+                                        class="thumbnail w100p notclick"
+                                        src="https://images.unsplash.com/photo-1561948955-570b270e7c36?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhdHxlbnwwfHwwfHx8MA%3D%3D"
+                                        data-row="THUMB"
+                                        data-jnf="IMG_SRC"
+                                        alt="리뷰 사용자 프로필 이미지"
+                                    />
+                                </div>
+                                <p class="review_name t_bold ml10" data-row="NM">김널리00</p>
+                            </div>
+                            <div class="t_orange stars pb10 t_normal">★★★★★</div>
+                            <p class="review_ex" data-row="TXT">정말 사용하기 좋아요. 편리합니다</p>
+                        </div>
+                    </li>
+                    <li class="comments">
+                        <div>
+                            <div class="flex flex-middle pb10 w100p">
+                                <div class="radius50 w35 h35 overh">
+                                    <img
+                                        class="thumbnail w100p notclick"
+                                        src="https://images.unsplash.com/photo-1561948955-570b270e7c36?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhdHxlbnwwfHwwfHx8MA%3D%3D"
+                                        data-row="THUMB"
+                                        data-jnf="IMG_SRC"
+                                        alt="리뷰 사용자 프로필 이미지"
+                                    />
+                                </div>
+                                <p class="review_name t_bold ml10" data-row="NM">김널리00</p>
+                            </div>
+                            <div class="t_orange stars pb10 t_normal">★★★★★</div>
+                            <p class="review_ex" data-row="TXT">정말 사용하기 좋아요. 편리합니다</p>
+                        </div>
+                    </li>
+                    <li class="comments">
+                        <div>
+                            <div class="flex flex-middle pb10 w100p">
+                                <div class="radius50 w35 h35 overh">
+                                    <img
+                                        class="thumbnail w100p notclick"
+                                        src="https://images.unsplash.com/photo-1561948955-570b270e7c36?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhdHxlbnwwfHwwfHx8MA%3D%3D"
+                                        data-row="THUMB"
+                                        data-jnf="IMG_SRC"
+                                        alt="리뷰 사용자 프로필 이미지"
+                                    />
+                                </div>
+                                <p class="review_name t_bold ml10" data-row="NM">김널리00</p>
+                            </div>
+                            <div class="t_orange stars pb10 t_normal">★★★★★</div>
+                            <p class="review_ex" data-row="TXT">정말 사용하기 좋아요. 편리합니다</p>
+                        </div>
+                    </li>
+                    <li class="comments">
+                        <div>
+                            <div class="flex flex-middle pb10 w100p">
+                                <div class="radius50 w35 h35 overh">
+                                    <img
+                                        class="thumbnail w100p notclick"
+                                        src="https://images.unsplash.com/photo-1561948955-570b270e7c36?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhdHxlbnwwfHwwfHx8MA%3D%3D"
                                         data-row="THUMB"
                                         data-jnf="IMG_SRC"
                                         alt="리뷰 사용자 프로필 이미지"
@@ -738,7 +830,7 @@
         </section>
         <!-- footer -->
         <!-- <div data-ele="https://ssem.kr/common.html$.new_footer"></div> -->
-        <footer class="new_footer">
+        <footer class="new_footer" id="new__footer">
             <!-- 고정 너비 -->
             <div class="rel_width">
                 <!-- pc footer -->
@@ -1078,7 +1170,7 @@
                 height="0"
                 width="0"
                 style="display: none; visibility: hidden"
-                title="Google"
+                title="googletagmanager"
             ></iframe
         ></noscript>
         <!-- End Google Tag Manager (noscript) -->

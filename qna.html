@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>SSEM : 알고리즘 세금신고</title>
+
+        <link
+            rel="preload"
+            href="https://fonts.gstatic.com/s/robotoflex/v8/NaPLcZLOBv5T3oB7Cb4i0xG2bDAauRdUc7yZsWIuwtiL.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin
+        />
+
+        <meta property="fb:app_id" content="208364763040243" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="SSEM : 알고리즘 세금신고" />
+        <meta property="og:url" content="https://ssem.kr" />
+        <meta property="og:image" content="https://ssem.kr/images/og/og_v1.png" />
+        <meta property="og:image:alt" content="SSEM" />
+        <meta
+            property="og:description"
+            content="개인사업자를 위한 세금신고 어플. 완벽한 부가세 신고, 종합소득세 신고를 월 비용 없는 합리적인 가격에 만나보세요. #SSEM #쎔 #쌤"
+        />
+        <meta name="robots" content="index" />
+        <meta
+            name="keywords"
+            content="부가세신고, 부가세, 부가가치세, 종합소득세, 종소세, 부가세신고방법, 종합소득세신고방법,홈택스, 국세청, 환급, 세금혜택, 절세, 세무사, 세금신고, 세무신고, 세금신고 어플, 세무신고어플, 세금관리, 세무관리, 세금관리 프로그램,간이사업자, 개인사업자, 자영업자, 소상공인, 개인사업자 부가세신고, 개인사업자 종합소득세신고, 개인사업자 세금신고, 개인사업자 세무신고,인공지능, AI, SSEM, 쎔, 쌤, 알고리즘 세금신고"
+        />
+        <meta
+            name="description"
+            content="개인사업자를 위한 알고리즘 세금신고 SSEM. 완벽한 세금신고를 월 비용 없는 합리적인 가격에 만나보세요. #SSEM #쎔 #쌤"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+
+        <link rel="icon" type="image/x-icon" href="https://ssem.kr/favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="https://ssem.kr/favicon.ico" />
+
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/ssem.beta.css" />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/ssem.ui.css" />
+        <link type="text/css" rel="stylesheet" href="//cdn02.ssem.kr/css/comp/mainAnimation.css" />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/ssemkr.icon.css" />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/icon.css" />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/comp/checkAnimation.css" />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/comp/taxAnimation.css" />
+
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/fonts/ssem/font.css" />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/fonts/ssem/noto.css" />
+        <link type="text/css" rel="stylesheet" href="https://ssem.kr/css/ssem.newIndex.css" />
+
+        <!-- 지선 추가 css -->
+        <link type="text/css" rel="stylesheet" href="./dist/css/comm.css" />
+
+        <!-- <script src='/js/jquery-3.2.1.min.js'></script> -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- <script src='/js/svg.js'></script> -->
+        <script type="text/javascript" src="https://sve.ssem.kr/ils/js/Init.js" async></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/jnut.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/_kking_app.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/jnut.formatter.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/attr.mgr.js"></script>
+
+        <!-- <script
+        type="text/javascript"
+        src="https://sve.ssem.kr//cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.4/lottie.min.js"
+    ></script> -->
+
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.jns.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.jns.custom.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.jns.fns.js"></script>
+
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.ele.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.lottie.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.href.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.enter.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.check.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.modal.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.btn.fake.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.textarea.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.tab.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.list.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.alert.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.confirm.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.temsg.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.slider.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.hider.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.disabler.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.select.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.incNum.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.inf.scroll.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.radio.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.format.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/chart.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/chartjs-plugin-trendline.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/signature_pad.min.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.chart.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.data.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.header.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.scrollBody.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.scrollAnimation.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.fixed.scroll.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.data.rec.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.data.json.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.data.text.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.file.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.datePicker.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.rate.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.focus.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.painter.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.slideUp.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/class.inputText.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.zoomArea.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.virtual.scroll.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.vkey.js"></script>
+        <script type="text/javascript" src="https://sve.ssem.kr/js/data.ics.js"></script>
+
+        <!-- 지선추가 script -->
+        <script defer type="text/javascript" src="/dist/js/comm.js"></script>
+
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-WR57JW5");
+        </script>
+        <!-- End Google Tag Manager -->
+
+        <!-- Facebook Pixel Code -->
+        <!-- <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1201819523540382');
+    $(function(){
+    fbq('track', 'PageView', window._qstr);
+    });
+
+    fbq('trackCustom', 'ScrollTracking', {
+    content_title: document.title, // 페이지의 제목
+    scroll_depth: '{{Scroll Depth Threshold}}%' // 스크롤 깊이
+});
+</script>
+<noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1201819523540382&ev=PageView&noscript=1(44 B)
+https://www.facebook.com/tr?id=1201819523540382&ev=PageView&noscript=1
+"
+/></noscript> -->
+        <!-- End Facebook Pixel Code -->
+    </head>
+    <body>
+        <!-- u-skip 추가 -->
+        <div id="u-skip">
+            <a href="#menu"><span>주요메뉴 바로가기</span></a>
+            <a href="#contents"><span>컨텐츠 바로가기</span></a>
+            <a href="#new__footer"><span>풋터 바로가기</span></a>
+        </div>
+        <!-- header -->
+        <!-- <div data-ele="/common.html$.new_header_wrap"></div> -->
+        <div class="new_header_wrap">
+            <header class="bg_white w100p new_header">
+                <!-- 고정 너비 -->
+                <div class="rel_width h100p flex flex-middle">
+                    <!-- PC 메뉴 -->
+                    <div class="pc_gnb w100p flex flex-between flex-middle h100p">
+                        <div class="flex flex-middle h100p">
+                            <div class="logo_header">
+                                <a href="index.html"
+                                    ><img
+                                        class="logo00 w100"
+                                        src="https://ssem.kr/images/ssem_logo.svg"
+                                        alt="로고이미지"
+                                /></a>
+                            </div>
+                            <ul id="menu" class="flex pc_bng_menu h100p">
+                                <li class="t_18 t_bold h100p flex-box flex-middle menu-step">
+                                    <a class="menu_hover" href="step.html?type=vat">신고방법</a>
+                                    <ul class="flex-box menu-step-sub">
+                                        <li class="flex-box mr0 flex-middle flex-center">
+                                            <a
+                                                class="t_center pd20 displayblock"
+                                                href="step.html?type=vat"
+                                                data-role="tab"
+                                                data-tab="vat"
+                                                >부가세</a
+                                            >
+                                        </li>
+                                        <li class="flex-box mr0 flex-middle flex-center">
+                                            <a
+                                                class="t_center pd20 displayblock"
+                                                href="step.html?type=tit"
+                                                data-role="tab"
+                                                data-tab="tit"
+                                                >종합소득세</a
+                                            >
+                                        </li>
+                                        <li class="flex-box mr0 flex-middle flex-center">
+                                            <a
+                                                class="t_center pd20 displayblock"
+                                                href="step.html?type=slc"
+                                                data-role="tab"
+                                                data-tab="slc"
+                                                >인건비</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="t_18 t_bold h100p flex-box flex-middle">
+                                    <a class="menu_hover" href="rate.html">요금안내</a>
+                                </li>
+                                <li class="t_18 t_bold h100p flex-box flex-middle">
+                                    <a class="menu_hover" href="faq.html">자주 묻는 질문</a>
+                                </li>
+                                <li class="t_18 t_bold h100p flex-box flex-middle">
+                                    <span class="menu_hover t_black" data-jns="element://.qna-btn">문의하기</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 설치 페이지 이동 -->
+                        <div class="">
+                            <a class="t_orange t_bold fr install_pc" href="/install.html">SSEM 설치</a>
+                        </div>
+                    </div>
+                    <!-- MOBILE 메뉴 -->
+                    <div class="mobile_gnb w100p flex flex-between flex-middle">
+                        <div
+                            class="ui_btn radius15 bg_orange w150"
+                            style="box-shadow: 0px 7px 20px rgba(233, 98, 37, 0.302)"
+                        >
+                            <a
+                                class="flex flex-middle flex-center t_white w100p h100p"
+                                href="/install.html"
+                                style="font-size: 20px"
+                            >
+                                SSEM 설치
+                            </a>
+                        </div>
+                        <p
+                            class="cursor mobile_menu t_black flex flex-middle"
+                            data-jns="element://.mobile_menu_modal"
+                            data-jns-next="parent/.toggle_menubar"
+                        >
+                            <img src="https://ssem.kr/images/main_home/Small_elements/MENU_btn.svg" alt="메뉴 아이콘" />
+                        </p>
+                        <p class="hide toggle_menubar" data-jns="fn://toggle/menubar"></p>
+                    </div>
+                </div>
+            </header>
+
+            <!-- mobile 메뉴 모달 -->
+            <div class="w100p h100p bg_white mobile_menu_modal modal btot hide">
+                <ul class="flex flex-middle flex-center">
+                    <li><a class="t_bold" href="step.html">신고방법</a></li>
+                    <li><a class="t_bold" href="rate.html">요금안내</a></li>
+                    <li><a class="t_bold" href="faq.html">자주 묻는 질문</a></li>
+                    <li><span class="t_bold t_black" data-jns="element://.qna-btn">문의하기</span></li>
+                    <li><a class="t_bold t_orange" href="index.html">홈으로</a></li>
+                </ul>
+            </div>
+
+            <!-- 문의하기 -->
+            <!-- <div data-ele="./comp/ics/ics_000.html$.qna-root"></div> -->
+        </div>
+
+        <!-- contents 시작 -->
+        <div id="contents" class="pt100" id="faqArea">
+            <h2>자주 묻는 질문</h2>
+            <div class="mb60">
+                <div class="ui-wrapper">
+                    <div class="page-title flex-box flex-left flex-middle flex-wrap">
+                        <div class="flex-box page-title-logo">
+                            <img class="w100p" src="/images/ssem_logo.svg" />
+                        </div>
+                        <h3 class="page-title-text">자주 묻는 질문</h3>
+                    </div>
+                    <div class="input-tb">
+                        <input
+                            id="search"
+                            data-jni="KEYWORD"
+                            class="text medium search_"
+                            type="text"
+                            placeholder="검색어를 입력하세요"
+                            data-enter=".src_svc"
+                        />
+                        <button
+                            class="src_svc bg b-red"
+                            data-jne="click"
+                            data-jns="ssem://svc/faq/faq_0001_06"
+                            data-jng=".search_"
+                            data-jns-next=".blurer"
+                            data-jni="COUNT"
+                        ></button>
+                        <p class="hide blurer" data-jns="fn://input/blur" data-jns-next=".src_keyword"></p>
+                    </div>
+                    <p class="text t-gray small mt10">키워드 : 부가세, 장부, 세금계산서...</p>
+                </div>
+                <!-- <h1 class="text t-center bold600 super">자주 묻는 질문</h1>
+            <div class="row pt20">
+                <div class="col s04"></div>
+                <div class="input-tb col s04">
+                    <input id="search" data-jni="KEYWORD" class="text medium search_" type="text" placeholder="검색어를 입력하세요" data-enter=".src_svc">
+                    <button class="w40 h40 src_svc bg b-red" data-jne="click" data-jns="ssem://svc/faq/faq_0001_06" data-jng=".search_" data-jns-next=".blurer" data-jni="COUNT"></button>
+                    <p class="hide blurer" data-jns="fn://input/blur" data-jns-next=".src_keyword"></p>
+                </div>
+                <div class="col s04"></div>
+            </div> -->
+            </div>
+            <div class="row no-mb no-pd">
+                <div class="ui-wrapper">
+                    <ul
+                        id="tabs"
+                        class="flex-box flex-middle flex-start flex-wrap list"
+                        data-jno="FAQ_GRP_LIST"
+                        style="gap: 5px"
+                    >
+                        <li class="hide">
+                            <span
+                                class="block pd10 border02g radius10"
+                                data-jns="fn://faq/tab_active"
+                                data-jne="click"
+                                data-jns-next="parent/.faq_svc"
+                                data-row="FAQ_GRP_NM"
+                                data-jnf="FAQ_ACTIVE"
+                            ></span>
+                            <p
+                                class="hide faq_svc"
+                                data-jns="ssem://svc/faq/faq_0001_01"
+                                data-jng="parent/.faq_grp"
+                                data-jns-next=".paging"
+                            ></p>
+                            <span class="hide faq_grp" data-row="FAQ_GRP_ID" data-jni="FAQ_GRP_ID"></span>
+                        </li>
+                    </ul>
+                    <div class="src_result flex-box flex-middle flex-left hide clearfix">
+                        <span class="">
+                            <span
+                                class="src_keyword text t-red800"
+                                data-jns="fn://faq/src_key"
+                                data-jns-next=".tab_hide"
+                                data-jng=".search_"
+                            ></span
+                            >에 대한
+                            <span class="src_count text bold800" data-jng=".src_svc" data-jno="COUNT"></span>건의 검색
+                            결과입니다.
+                        </span>
+                        <div
+                            class="i-close ml10"
+                            data-jne="click"
+                            data-jns="fn://faq/tab_show"
+                            data-jns-next=".show_reset"
+                        ></div>
+                    </div>
+                    <p
+                        class="hide tab_hide"
+                        data-jns="fn://faq/tab_hide"
+                        data-jns-next=".highlighter"
+                        data-jng=".search_"
+                    ></p>
+                    <p
+                        class="show_reset hide"
+                        data-jns="ssem://svc/faq/faq_0001_01"
+                        data-jni="FAQ_GRP_ID"
+                        data-jng=".show_reset"
+                        data-jns-next=".page_max_list"
+                    >
+                        1
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="row no-mb tab_wrap pl0 pr0">
+            
+            <div class="col s01"></div>
+
+            <div class="col s10 underline2 pt30 pb10">
+                
+            </div>
+            
+            <div class="col s01"></div>
+        </div> -->
+
+            <div class="mt30">
+                <div class="ui-wrapper">
+                    <input class="max_list pagenumber hide" data-jni="MAX_LIST" value="20" />
+                    <ul id="qnas" class="list col s12" data-jno="FAQ_LIST" data-jnf="DRAW_LIST" data-jni="FAQ_LIST">
+                        <li class="hide bg_icegray mb2">
+                            <a class="ques row" data-jne="click" data-jns="fn://faq/open">
+                                <span class="text t-red800 q"></span>
+                                <h1
+                                    class="pt20 pb20 pr30 pl30 text t_big t-black600 col s11 lh30 pre_std"
+                                    data-row="FAQ_QUES_CNTS"
+                                ></h1>
+                                <p class="col s01 h70 transt i-arrow-b i-openable"></p>
+                            </a>
+                            <ul>
+                                <li class="row pt30 pb40 bg bg_white box-shadow">
+                                    <!-- <span class="text t-red800">A.</span> -->
+                                    <pre
+                                        class="pr30 pl30 text t-black pre_std"
+                                        data-row="FAQ_ANS_CNTS"
+                                        data-jnf="A_HREF"
+                                    ></pre>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--질문과 답변-->
+
+                    <h1 class="no_result hide col s12 text t-center t_big t-gray pt20">검색 결과가 없습니다.</h1>
+                </div>
+            </div>
+
+            <!-- <div class="row faqgrp pl0 pr0">
+            <div class="col s01"></div>
+
+            <div class="col s10">
+                <input class="max_list pagenumber hide" data-jni="MAX_LIST" value="20">
+                <ul id="qnas" class="list col s12" data-jno="FAQ_LIST" data-jnf="DRAW_LIST" data-jni="FAQ_LIST">
+
+                    <li class="row hide">
+                        <a class="ques row underlinew" data-jne="click" data-jns="fn://faq/open">
+                            <span class="text t-red800 q">Q.</span>
+                            <h1 class="pt20 pb20 pr30 pl30 text t_big t-black600 col s11 lh30 pre_std" data-row="FAQ_QUES_CNTS"></h1>
+                            <p class="col s01 h70 transt i-arrow-b i-openable"></p>
+                        </a>
+                        <ul>
+                            <li class="underlinew row pt30 pb40 bg b-very-white">
+                                <span class="text t-red800">A.</span>
+                                <pre class="pr20 pl50 text t-black pre_std" data-row="FAQ_ANS_CNTS" data-jnf="A_HREF"></pre>
+                            </li>
+                        </ul>
+                    </li>            
+    
+                </ul>
+
+                <h1 class="no_result hide col s12 text t-center t_big t-gray pt20">검색 결과가 없습니다.</h1>
+            </div>
+            
+            <div class="col s01"></div>
+        </div> -->
+
+            <div class="pager mt60 text t-center">
+                <ol class="clearfix list" data-jno="PAGE_NUM_LIST">
+                    <li class="fl hide ml5">
+                        <input class="max_list2 pagenumber hide" data-jni="MAX_LIST" value="20" />
+                        <p
+                            class="set_pager max_list2 border01g"
+                            data-jne="click"
+                            data-jns="fn://page_active"
+                            data-jni="PAGE_NUM"
+                            data-row="PAGE_NUM"
+                            data-jng="parent/.pagenumber"
+                            data-jns-next="parent/.go_up"
+                            data-jnf="SET_PAGING_ACTIVE"
+                        ></p>
+
+                        <p class="hide go_up" data-jns="fn://scroll_up" data-jns-next="parent/.list_page"></p>
+
+                        <p class="hide pagenum pagenumber max_list2" data-row="PAGE_NUM" data-jni="PAGE_NUM"></p>
+                        <p
+                            class="hide page_max_list pagenumber"
+                            data-jng=".max_list"
+                            data-jno="MAX_LIST"
+                            data-jni="MAX_LIST"
+                            data-jns="fn://data/clone"
+                            data-jns-next=".highlighter"
+                        ></p>
+                        <p
+                            class="hide list_page max_list2"
+                            data-jng="parent/.max_list2"
+                            data-jni="ID_NAME"
+                            data-jns="fn://list_paging"
+                            data-jno-root=".faqgrp"
+                            data-jns-next="parent/.highli"
+                        >
+                            FAQ_LIST
+                        </p>
+
+                        <p class="highli" data-jng=".search_" data-jns="fn://faq/highlighter"></p>
+                    </li>
+                </ol>
+            </div>
+            <div id="accordionGroup" class="accordion">
+                <h3>
+                    <button
+                        type="button"
+                        aria-expanded="true"
+                        class="accordion-trigger"
+                        aria-controls="sect1"
+                        id="accordion1id"
+                    >
+                        <span class="accordion-title">
+                            SSEM은 어떤 서비스인가요?
+                            <span class="accordion-icon"></span>
+                        </span>
+                    </button>
+                </h3>
+                <div id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel">
+                    <div>
+                        <fieldset>
+                            <p>
+                                SSEM은 누구나 쉽고 편리하게 세금을 직접 신고할 수 있도록 도와주는 서비스입니다. 똑똑한
+                                알고리즘이 혜택 하나하나를 찾아주며, 고객님께 가장 유리한 계산 결과를 보여드립니다.
+                            </p>
+                        </fieldset>
+                    </div>
+                </div>
+                <h3>
+                    <button
+                        type="button"
+                        aria-expanded="false"
+                        class="accordion-trigger"
+                        aria-controls="sect2"
+                        id="accordion2id"
+                    >
+                        <span class="accordion-title">
+                            SSEM 이용방법을 알려주세요.
+                            <span class="accordion-icon"></span>
+                        </span>
+                    </button>
+                </h3>
+                <div id="sect2" role="region" aria-labelledby="accordion2id" class="accordion-panel" hidden="">
+                    <div>
+                        <fieldset>
+                            <p>간편인증서 및 금융/공동인증서가 있으면 이용할 수 있습니다.</p>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <h3>
+                    <button
+                        type="button"
+                        aria-expanded="false"
+                        class="accordion-trigger"
+                        aria-controls="sect3"
+                        id="accordion3id"
+                    >
+                        <span class="accordion-title">
+                            SSEM은 사업자라면 누구나 이용할 수 있나요?
+                            <span class="accordion-icon"></span>
+                        </span>
+                    </button>
+                </h3>
+                <div id="sect3" role="region" aria-labelledby="accordion3id" class="accordion-panel" hidden="">
+                    <div>
+                        <fieldset>
+                            <p>모든 개인사업자는 SSEM에서 쉽고 간편하게 신고가 가능합니다.</p>
+                        </fieldset>
+                    </div>
+                </div>
+                <h3>
+                    <button
+                        type="button"
+                        aria-expanded="false"
+                        class="accordion-trigger"
+                        aria-controls="sect4"
+                        id="accordion4id"
+                    >
+                        <span class="accordion-title">
+                            SSEM은 어떤 서비스인가요?
+                            <span class="accordion-icon"></span>
+                        </span>
+                    </button>
+                </h3>
+                <div id="sect4" role="region" aria-labelledby="accordion4id" class="accordion-panel" hidden="">
+                    <div>
+                        <fieldset>
+                            <p>
+                                SSEM은 누구나 쉽고 편리하게 세금을 직접 신고할 수 있도록 도와주는 서비스입니다. 똑똑한
+                                알고리즘이 혜택 하나하나를 찾아주며, 고객님께 가장 유리한 계산 결과를 보여드립니다.
+                            </p>
+                        </fieldset>
+                    </div>
+                </div>
+                <h3>
+                    <button
+                        type="button"
+                        aria-expanded="false"
+                        class="accordion-trigger"
+                        aria-controls="sect5"
+                        id="accordion5id"
+                    >
+                        <span class="accordion-title">
+                            SSEM으로 계산해보니 평소보다 세금이 적게 나와서 불안해요.
+                            <span class="accordion-icon"></span>
+                        </span>
+                    </button>
+                </h3>
+                <div id="sect5" role="region" aria-labelledby="accordion5id" class="accordion-panel" hidden="">
+                    <div>
+                        <fieldset>
+                            <p>
+                                S SSEM은 세법 안에서 알고리즘이 가장 유리하게 계산하며, 세금혜택을 자동으로 적용한
+                                결과를 보여드립니다.
+                            </p>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row bg">
+                <div class="pb50">
+                    <h1 class="text t-center bold600 t_super pt40 pb20 mb20 ifo">궁금한 점이 있다면</h1>
+
+                    <div class="flex-box flex-center flex-middle gap10 w100p flex-wrap">
+                        <div
+                            class="pd15 radius15 border01 w150 flex-box flex-col flex-middle flex-top"
+                            style="align-self: stretch"
+                            data-jns="element://.qna-btn"
+                        >
+                            <div class="flex-box flex-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                                    <path
+                                        d="M240 657h313v-60H240v60Zm0-130h480v-60H240v60Zm0-130h480v-60H240v60ZM80 976V236q0-23 18-41.5t42-18.5h680q23 0 41.5 18.5T880 236v520q0 23-18.5 41.5T820 816H240L80 976Zm60-145 75-75h605V236H140v595Zm0-595v595-595Z"
+                                    />
+                                </svg>
+                            </div>
+                            <span>채팅상담</span>
+                        </div>
+                        <a
+                            class="pd15 radius15 border01 w150 flex-box flex-col flex-middle flex-center"
+                            href="tel:15885368"
+                        >
+                            <div class="flex-box flex-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                                    <path
+                                        d="M795 936q-122 0-242.5-60T336 720q-96-96-156-216.5T120 261q0-19.286 12.857-32.143T165 216h140q13.611 0 24.306 9.5Q340 235 343 251l27 126q2 14-.5 25.5T359 422L259 523q56 93 125.5 162T542 802l95-98q10-11 23-15.5t26-1.5l119 26q15.312 3.375 25.156 15.188Q840 740 840 756v135q0 19.286-12.857 32.143T795 936ZM229 468l81-82-23-110H180q0 39 12 85.5T229 468Zm369 363q41 19 89 31t93 14V769l-103-21-79 83ZM229 468Zm369 363Z"
+                                    />
+                                </svg>
+                            </div>
+                            <div>전화상담</div>
+                            <div class="t_small t_gray">1588-5368</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="hide" data-jno="COUNT" data-jnf="PAGING_NUMBER"></p>
+        <div class="hide" data-jns-onload data-jns="fn://data/userAgent/version" data-jni="DEVICE_CHECK"></div>
+
+        <!-- footer -->
+        <!-- <div data-ele="https://ssem.kr/common.html$.new_footer"></div> -->
+        <footer class="new_footer" id="new__footer">
+            <!-- 고정 너비 -->
+            <div class="rel_width">
+                <!-- pc footer -->
+                <div class="pc_footer">
+                    <div>
+                        <div>
+                            <a href="index.html"
+                                ><img
+                                    class="logo00 pc_footer_logo"
+                                    src="https://ssem.kr/images/ssem_logo_white2.svg"
+                                    alt="로고이미지"
+                            /></a>
+                        </div>
+                        <div>
+                            <ul class="flex pc_footer_linkList">
+                                <li class="mr30"><a class="t_white t_bold" href="/term_03.html">공지사항</a></li>
+                                <li class="mr30"><a class="t_white t_bold" href="/term_02.html">이용약관</a></li>
+                                <li class="mr30">
+                                    <a class="t_white t_bold" href="/term_01.html">개인정보 취급방침</a>
+                                </li>
+                                <li><a class="t_white t_bold" href="/company.html">회사소개</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pc_RightSNS_wrap">
+                        <p class="t_white t_18">© 2022 nullee Inc.</p>
+                        <ul class="flex flex-middle">
+                            <li class="w20 mr20">
+                                <a href="https://www.instagram.com/ssem_official/" target="_blank"
+                                    ><img
+                                        src="https://ssem.kr/images/main_home/SNS/insta.svg"
+                                        alt="SSEM인스타그램으로 연결되는 아이콘"
+                                /></a>
+                            </li>
+                            <li class="mr20">
+                                <a href="https://www.facebook.com/ssem.kr/" target="_blank"
+                                    ><img
+                                        src="https://ssem.kr/images/main_home/SNS/Facebook.svg"
+                                        alt="SSEM페이스북으로 연결되는 아이콘"
+                                /></a>
+                            </li>
+                            <li class="mr20">
+                                <a
+                                    href="https://www.youtube.com/channel/UCYm4sGPN2_1NoGtkt0VRwCw/featured"
+                                    target="_blank"
+                                    ><img
+                                        src="https://ssem.kr/images/main_home/SNS/Youtube.svg"
+                                        alt="SSEM유튜브로 연결되는 아이콘"
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="http://blog.ssem.kr/" target="_blank"
+                                    ><img
+                                        src="https://ssem.kr/images/main_home/SNS/Blog.svg"
+                                        alt="SSEM블로그로 연결되는 아이콘"
+                                /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- mobile footer -->
+                <div class="mobile_footer flex-between">
+                    <div class="mobile_logo_SNS_wrap flex flex-between">
+                        <div>
+                            <a href="/index.html"
+                                ><img
+                                    class="logo00 mobile_footer_logo"
+                                    src="https://ssem.kr/images/ssem_logo_white2.svg"
+                                    alt="로고이미지"
+                            /></a>
+                        </div>
+                        <ul class="flex flex-middle mobile_SNS_wrap">
+                            <li class="w20 mr20 ml20">
+                                <a href="https://www.instagram.com/ssem_official/" target="_blank"
+                                    ><img
+                                        src="https://ssem.kr/images/main_home/SNS/insta.svg"
+                                        alt="SSEM인스타그램으로 연결되는 아이콘"
+                                /></a>
+                            </li>
+                            <li class="mr20">
+                                <a href="https://www.facebook.com/ssem.kr/" target="_blank"
+                                    ><img
+                                        src="https://ssem.kr/images/main_home/SNS/Facebook.svg"
+                                        alt="SSEM페이스북으로 연결되는 아이콘"
+                                /></a>
+                            </li>
+                            <li class="mr20">
+                                <a
+                                    href="https://www.youtube.com/channel/UCYm4sGPN2_1NoGtkt0VRwCw/featured"
+                                    target="_blank"
+                                    ><img
+                                        src="https://ssem.kr/images/main_home/SNS/Youtube.svg"
+                                        alt="SSEM유튜브로 연결되는 아이콘"
+                                /></a>
+                            </li>
+                            <li class="">
+                                <a href="http://blog.ssem.kr/" target="_blank"
+                                    ><img
+                                        src="https://ssem.kr/images/main_home/SNS/Blog.svg"
+                                        alt="SSEM블로그로 연결되는 아이콘"
+                                /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="mobile_footer_linkList flex flex-around t_center">
+                        <li><a class="t_white t_bold" href="/term_03.html">공지사항</a></li>
+                        <li><a class="t_white t_bold" href="/term_02.html">이용약관</a></li>
+                        <li><a class="t_white t_bold" href="/term_01.html">개인정보 취급방침</a></li>
+                        <li><a class="t_white t_bold" href="/company.html">회사소개</a></li>
+                    </ul>
+                    <p class="t_18 t_center mobile_Right">© 2022 nullee Inc.</p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="hide">
+            <p class="faq_category" data-jns="ssem://svc/faq/faq_0001_03" data-jns-next=".faq_qnas" data-jns-onload></p>
+
+            <p
+                class="faq_qnas"
+                data-jns="ssem://svc/faq/faq_0001_01"
+                data-jns-next=".paging"
+                data-jni="FAQ_GRP_ID"
+                data-jng=".faq_qnas"
+            >
+                1
+            </p>
+
+            <p
+                class="paging max_list pagenumber"
+                data-jns="fn://page_num"
+                data-jno="COUNT"
+                data-jni="COUNT"
+                data-jng=".max_list"
+            ></p>
+            <p
+                class="src_count"
+                data-jns="fn://faq/src_count"
+                data-jno="COUNT"
+                data-jni="COUNT"
+                data-jng=".src_count"
+                data-jns-next=".paging"
+            ></p>
+
+            <p class="highlighter" data-jns="fn://faq/highlighter" data-jng=".search_" data-jns-next=".src_count"></p>
+
+            <p class="originObj"></p>
+            <!-- <p class="key_clone" data-jns="fn://data/clone" data-jns-next=".paging" data-jng=".search_"></p> -->
+        </div>
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-WR57JW5"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    </body>
+</html>
