@@ -27,9 +27,9 @@
 .accordion {
     margin: 0;
     padding: 0;
-    border: 2px solid hsl(0deg 0% 52%);
-    border-radius: 7px;
-    width: 20em;
+    border: 2px solid rgb(255, 255, 255);
+
+    width: 100%;
 }
 
 .accordion h3 {
@@ -46,7 +46,7 @@
 }
 
 .accordion > * + * {
-    border-top: 1px solid hsl(0deg 0% 52%);
+    border-top: 2px solid rgb(255, 255, 255);
 }
 
 .accordion-trigger {
@@ -70,16 +70,6 @@
 
 .accordion-trigger:focus {
     outline: 4px solid transparent;
-}
-
-.accordion > *:first-child .accordion-trigger,
-.accordion > *:first-child {
-    border-radius: 5px 5px 0 0;
-}
-
-.accordion > *:last-child .accordion-trigger,
-.accordion > *:last-child {
-    border-radius: 0 0 5px 5px;
 }
 
 button {
