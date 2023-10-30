@@ -38,10 +38,6 @@
     background: #f0f2f4;
 }
 
-.accordion:focus-within {
-    border: 3px solid #333;
-}
-
 .accordion:focus-within h3 {
     background-color: #f7f7f7;
 }
@@ -71,6 +67,12 @@
 button {
     border-style: none;
 }
+.chat-btn {
+    background-color: #fff;
+}
+.chat-btn span {
+    font-size: 18px;
+}
 
 .accordion button::-moz-focus-inner {
     border: 0;
@@ -86,7 +88,7 @@ button {
 }
 
 .accordion-trigger:focus .accordion-title {
-    border: 3px solid #333;
+    border: 1px solid #333;
 }
 
 .accordion-icon {
